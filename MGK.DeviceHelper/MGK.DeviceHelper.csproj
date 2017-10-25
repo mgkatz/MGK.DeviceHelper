@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<PackageId>MGK.DeviceHelper</PackageId>
+    <PackageVersion>1.2.1-rc</PackageVersion>
+	<Version>1.2.1-rc</Version>
+    <Authors>Matías Gabriel Katz</Authors>
+	<Title>Device helper</Title>
+    <Description>Library useful for web projects to get information through the user agent about the browser, the operating system and the device type.</Description>
+	<PackageLicenseUrl>http://www.gnu.org/licenses/agpl.html</PackageLicenseUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>This release includes documentation comments and a file with a brief example of use.</PackageReleaseNotes>
+    <Copyright>Copyright 2017 (c) Matías Gabriel Katz.</Copyright>
+    <PackageTags>useragent user agent browser device os operating system web projects</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\MGK.DeviceHelper.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="regexosrecords.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="regexbrowserrecords.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

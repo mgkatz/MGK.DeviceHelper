@@ -1,0 +1,229 @@
+﻿{
+	"Records": [
+		{
+			"RegexName": "1",
+			"RegexExpression": "android.+version\\/([\\w\\.]+)\\s+(?:mobile\\s?safari|safari)*",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "2",
+			"RegexExpression": "(avant\\s|iemobile|slim|baidu)(?:browser)?[\\/\\s]?([\\w\\.]*)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "3",
+			"RegexExpression": "((?:android.+)crmo|crios)\\/([\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "4",
+			"RegexExpression": "(chrome(?!.*Edge)|omniweb|arora|[tizenoka]{5}\\s?browser)\\/v?([\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "5",
+			"RegexExpression": "\\swv\\).+(chrome(?!.*Edge))\\/([\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "6",
+			"RegexExpression": "(chromium|flock|rockmelt|midori|epiphany|silk|skyfire|ovibrowser|bolt|iron|vivaldi|iridium|phantomjs)\\/([\\w\\.-]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "7",
+			"RegexExpression": "(comodo_dragon)\\/([\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "8",
+			"RegexExpression": "(dolfin)\\/([\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "9",
+			"RegexExpression": ";fbav\\/([\\w\\.]+);",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "10",
+			"RegexExpression": "fxios\\/([\\w\\.-]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "11",
+			"RegexExpression": "(firefox|seamonkey|k-meleon|icecat|iceape|firebird|phoenix)\\/([\\w\\.-]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "12",
+			"RegexExpression": "(gobrowser)\\/?([\\w\\.]+)*",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "13",
+			"RegexExpression": "(ice\\s?browser)\\/v?([\\w\\._]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "14",
+			"RegexExpression": "(icedragon|iceweasel|camino|chimera|fennec|maemo\\sbrowser|minimo|conkeror)[\\/\\s]?([\\w\\.\\+]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "15",
+			"RegexExpression": "(trident).+rv[:\\s]([\\w\\.]+).+like\\sgecko",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "16",
+			"RegexExpression": "(?:ms|\\()(ie)\\s([\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "17",
+			"RegexExpression": "(kindle)\\/([\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "18",
+			"RegexExpression": "(konqueror)\\/([\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "19",
+			"RegexExpression": "(links)\\s\\(([\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "20",
+			"RegexExpression": "(lunascape|maxthon|netfront|jasmine|blazer)[\\/\\s]?([\\w\\.]+)*",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "21",
+			"RegexExpression": "(edge)\\/((\\d+)?[\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "22",
+			"RegexExpression": "xiaomi\\/miuibrowser\\/([\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "23",
+			"RegexExpression": "version\\/([\\w\\.]+).+?mobile\\/\\w+\\s(safari)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "24",
+			"RegexExpression": "(mosaic)[\\/\\s]([\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "25",
+			"RegexExpression": "(mozilla)\\/([\\w\\.]+).+rv\\:.+gecko\\/\\d+",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "26",
+			"RegexExpression": "(navigator|netscape)\\/([\\w\\.-]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "27",
+			"RegexExpression": "(opera).+version\\/([\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "28",
+			"RegexExpression": "(opera)[\\/\\s]+([\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "29",
+			"RegexExpression": "(opera\\smini)\\/([\\w\\.-]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "30",
+			"RegexExpression": "(opios)[\\/\\s]+([\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "31",
+			"RegexExpression": "(opera\\s[mobiletab]+).+version\\/([\\w\\.-]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "32",
+			"RegexExpression": "\\s(opr)\\/([\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "33",
+			"RegexExpression": "(polaris|lynx|dillo|icab|doris|amaya|w3m|netsurf|sleipnir)[\\/\\s]?([\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "34",
+			"RegexExpression": "(qqbrowser)[\\/\\s]?([\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "35",
+			"RegexExpression": "(rekonq)\\/([\\w\\.]+)*",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "36",
+			"RegexExpression": "version\\/([\\w\\.]+).+?(mobile\\s?safari|safari)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "37",
+			"RegexExpression": "webkit.+?(mobile\\s?safari|safari)(\\/[\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "38",
+			"RegexExpression": "android.+samsungbrowser\\/([\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "39",
+			"RegexExpression": "(swiftfox)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "40",
+			"RegexExpression": "(uc\\s?browser)[\\/\\s]?([\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "40",
+			"RegexExpression": "ucweb.+(ucbrowser)[\\/\\s]?([\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "40",
+			"RegexExpression": "juc.+(ucweb)[\\/\\s]?([\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "41",
+			"RegexExpression": "(webkit|khtml)\\/([\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "42",
+			"RegexExpression": "(micromessenger)\\/([\\w\\.]+)",
+			"RegexOptions": "1"
+		},
+		{
+			"RegexName": "43",
+			"RegexExpression": "(yabrowser)\\/([\\w\\.]+)",
+			"RegexOptions": "1"
+		}
+	]
+}
