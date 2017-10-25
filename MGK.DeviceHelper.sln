@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.26730.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MGK.DeviceHelper", "MGK.DeviceHelper\MGK.DeviceHelper.csproj", "{7C018841-1EF2-4E14-8E22-D4C2DDFEEEAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MGK.DeviceHelper.Console", "MGK.DeviceHelper.Console\MGK.DeviceHelper.Console.csproj", "{7653297A-8990-498F-AF68-B2FF3DFCD26D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{7C018841-1EF2-4E14-8E22-D4C2DDFEEEAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C018841-1EF2-4E14-8E22-D4C2DDFEEEAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C018841-1EF2-4E14-8E22-D4C2DDFEEEAF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7653297A-8990-498F-AF68-B2FF3DFCD26D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7653297A-8990-498F-AF68-B2FF3DFCD26D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7653297A-8990-498F-AF68-B2FF3DFCD26D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7653297A-8990-498F-AF68-B2FF3DFCD26D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
