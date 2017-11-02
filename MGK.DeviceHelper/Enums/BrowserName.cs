@@ -55,7 +55,7 @@
 		Yandex = 43
 	}
 
-	public static class RegexBrowserNameExtensions
+	public static class BrowserNameExtensions
 	{
 		/// <summary>
 		/// Gets a generic name to display for every value in the enumaration.

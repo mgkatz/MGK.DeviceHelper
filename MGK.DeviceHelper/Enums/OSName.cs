@@ -37,7 +37,7 @@
 		WindowsRT = 28
 	}
 
-	public static class RegexOSNameExtensions
+	public static class OSNameExtensions
 	{
 		/// <summary>
 		/// Gets a generic name to display for every value in the enumaration.

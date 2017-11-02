@@ -3,14 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
 	<PackageId>MGK.DeviceHelper</PackageId>
-    <PackageVersion>1.2.1-rc</PackageVersion>
-	<Version>1.2.1-rc</Version>
+    <PackageVersion>1.2.2</PackageVersion>
+	<Version>1.2.2</Version>
     <Authors>Matías Gabriel Katz</Authors>
 	<Title>Device helper</Title>
     <Description>Library useful for web projects to get information through the user agent about the browser, the operating system and the device type.</Description>
 	<PackageLicenseUrl>http://www.gnu.org/licenses/agpl.html</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes>This release includes documentation comments and a file with a brief example of use.</PackageReleaseNotes>
+    <PackageReleaseNotes>Bug fix on extension methods.</PackageReleaseNotes>
     <Copyright>Copyright 2017 (c) Matías Gabriel Katz.</Copyright>
     <PackageTags>useragent user agent browser device os operating system web projects</PackageTags>
   </PropertyGroup>
