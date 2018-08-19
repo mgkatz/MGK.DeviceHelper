@@ -1,0 +1,801 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BrowserJsonFile" xml:space="preserve">
+    <value>regexbrowserrecords.json</value>
+  </data>
+  <data name="BrowserNameAndroidBrowser" xml:space="preserve">
+    <value>Android Browser</value>
+  </data>
+  <data name="BrowserNameAvantIEMobileSlimBrowserBaidu" xml:space="preserve">
+    <value>Avant/IEMobile/SlimBrowser/Baidu</value>
+  </data>
+  <data name="BrowserNameChromeAndroidiOS" xml:space="preserve">
+    <value>Chrome for Android/iOS</value>
+  </data>
+  <data name="BrowserNameChromeOmniWebAroraTizenNokia" xml:space="preserve">
+    <value>Chrome/OmniWeb/Arora/Tizen/Nokia</value>
+  </data>
+  <data name="BrowserNameChromeWebView" xml:space="preserve">
+    <value>Chrome WebView</value>
+  </data>
+  <data name="BrowserNameChromiumFlockRockMeltMidoriEpiphanySilkSkyfireBoltIronIridiumPhantomJS" xml:space="preserve">
+    <value>Chromium/Flock/RockMelt/Midori/Epiphany/Silk/Skyfire/Bolt/Iron/Iridium/PhantomJS</value>
+  </data>
+  <data name="BrowserNameComodoDragon" xml:space="preserve">
+    <value>Comodo Dragon</value>
+  </data>
+  <data name="BrowserNameFacebookAppiOS" xml:space="preserve">
+    <value>Facebook App for iOS</value>
+  </data>
+  <data name="BrowserNameFirefoxiOS" xml:space="preserve">
+    <value>Firefox for iOS</value>
+  </data>
+  <data name="BrowserNameFirefoxSeaMonkeyKMeleonIceCatIceApeFirebirdPhoenix" xml:space="preserve">
+    <value>Firefox/SeaMonkey/K-Meleon/IceCat/IceApe/Firebird/Phoenix</value>
+  </data>
+  <data name="BrowserNameICEBrowser" xml:space="preserve">
+    <value>ICE Browser</value>
+  </data>
+  <data name="BrowserNameIceDragonIceweaselCaminoChimeraFennecMaemoMinimoConkeror" xml:space="preserve">
+    <value>IceDragon/Iceweasel/Camino/Chimera/Fennec/Maemo/Minimo/Conkeror</value>
+  </data>
+  <data name="BrowserNameIE11" xml:space="preserve">
+    <value>Internet Explorer 11</value>
+  </data>
+  <data name="BrowserNameInternetExplorer" xml:space="preserve">
+    <value>Internet Explorer</value>
+  </data>
+  <data name="BrowserNameLunascapeMaxthonNetfrontJasmineBlazer" xml:space="preserve">
+    <value>Lunascape/Maxthon/Netfront/Jasmine/Blazer</value>
+  </data>
+  <data name="BrowserNameMicrosoftEdge" xml:space="preserve">
+    <value>Microsoft Edge</value>
+  </data>
+  <data name="BrowserNameMIUIBrowser" xml:space="preserve">
+    <value>MIUI Browser</value>
+  </data>
+  <data name="BrowserNameMobileSafari" xml:space="preserve">
+    <value>Mobile Safari</value>
+  </data>
+  <data name="BrowserNameOperaGT980" xml:space="preserve">
+    <value>Opera &gt; 9.80</value>
+  </data>
+  <data name="BrowserNameOperaLT980" xml:space="preserve">
+    <value>Opera &lt; 9.80</value>
+  </data>
+  <data name="BrowserNameOperaMini" xml:space="preserve">
+    <value>Opera Mini</value>
+  </data>
+  <data name="BrowserNameOperaMiniIphoneGTE80" xml:space="preserve">
+    <value>Opera mini on iphone &gt;= 8.0</value>
+  </data>
+  <data name="BrowserNameOperaMobiTablet" xml:space="preserve">
+    <value>Opera Mobi/Tablet</value>
+  </data>
+  <data name="BrowserNameOperaWebkit" xml:space="preserve">
+    <value>Opera Webkit</value>
+  </data>
+  <data name="BrowserNamePolarisLynxDilloiCabDorisw3mNetSurfSleipnir" xml:space="preserve">
+    <value>Polaris/Lynx/Dillo/iCab/Doris/w3m/NetSurf/Sleipnir</value>
+  </data>
+  <data name="BrowserNameSafariAndSafariMobile" xml:space="preserve">
+    <value>Safari &amp; Safari Mobile</value>
+  </data>
+  <data name="BrowserNameSafariLT30" xml:space="preserve">
+    <value>Safari &lt; 3.0</value>
+  </data>
+  <data name="BrowserNameSamsungBrowser" xml:space="preserve">
+    <value>Samsung Browser</value>
+  </data>
+  <data name="Dot" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="ForwardSlash" xml:space="preserve">
+    <value>/</value>
+  </data>
+  <data name="OSJsonFile" xml:space="preserve">
+    <value>regexosrecords.json</value>
+  </data>
+  <data name="OSNameAndroidWebOSPalmQNXBadaRIMMeeGoContiki" xml:space="preserve">
+    <value>Android/WebOS/Palm/QNX/Bada/RIM/MeeGo/Contiki</value>
+  </data>
+  <data name="OSNameBlackberry10Default" xml:space="preserve">
+    <value>BB10</value>
+  </data>
+  <data name="OSNameChromiumOS" xml:space="preserve">
+    <value>Chromium OS</value>
+  </data>
+  <data name="OSNameFirefoxOS" xml:space="preserve">
+    <value>Firefox OS</value>
+  </data>
+  <data name="OSNameFreeBSDNetBSDOpenBSDPCBSDDragonFlyHaiku" xml:space="preserve">
+    <value>FreeBSD/NetBSD/OpenBSD/PC-BSD/DragonFly</value>
+  </data>
+  <data name="OSNameHurdLinux" xml:space="preserve">
+    <value>Hurd/Linux</value>
+  </data>
+  <data name="OSNameJoliUbuntuDebianSUSEGentooArchSlackwareFedoraMandrivaCentOSPCLinuxOSRedHatZenwalkLinpus" xml:space="preserve">
+    <value>Joli/Ubuntu/Debian/SUSE/Gentoo/Arch/Slackware/Fedora/Mandriva/CentOS/PCLinuxOS/RedHat/Zenwalk/Linpus</value>
+  </data>
+  <data name="OSNameMacOS" xml:space="preserve">
+    <value>Mac OS</value>
+  </data>
+  <data name="OSNameMageiaVectorLinux" xml:space="preserve">
+    <value>Mageia/VectorLinux</value>
+  </data>
+  <data name="OSNameNintendoPlaystation" xml:space="preserve">
+    <value>Nintendo/Playstation</value>
+  </data>
+  <data name="OSNamePlan9MinixBeOSOS2AmigaOSMorphOSRISCOSOpenVMS" xml:space="preserve">
+    <value>Plan9/Minix/BeOS/OS2/AmigaOS/MorphOS/RISCOS/OpenVMS</value>
+  </data>
+  <data name="OSNameSailfishOS" xml:space="preserve">
+    <value>Sailfish OS</value>
+  </data>
+  <data name="OSNameSeries40" xml:space="preserve">
+    <value>Series 40</value>
+  </data>
+  <data name="OSNameSolaris" xml:space="preserve">
+    <value>Solaris</value>
+  </data>
+  <data name="OSNameWindowsiTunes" xml:space="preserve">
+    <value>Windows (iTunes)</value>
+  </data>
+  <data name="OSNameWindowsMobile" xml:space="preserve">
+    <value>Windows Mobile</value>
+  </data>
+  <data name="OSNameWindowsPhone" xml:space="preserve">
+    <value>Windows Phone</value>
+  </data>
+  <data name="OSNameWindowsRT" xml:space="preserve">
+    <value>Windows RT</value>
+  </data>
+  <data name="RegexBrowserNameMatchEvaluatorChromeWebView" xml:space="preserve">
+    <value>$1 WebView</value>
+  </data>
+  <data name="RegexBrowserNamePatternChromeWebView" xml:space="preserve">
+    <value>(.+)</value>
+  </data>
+  <data name="RegexBrowserNamePatternMozilla" xml:space="preserve">
+    <value>^[a-zA-Z]+</value>
+  </data>
+  <data name="RegexBrowserPatternMajor" xml:space="preserve">
+    <value>\d*</value>
+  </data>
+  <data name="RegexOSNamePatterniOs" xml:space="preserve">
+    <value>\d+(?:\.\d+)*</value>
+  </data>
+  <data name="RegexOSNamePatternDefault" xml:space="preserve">
+    <value>^[a-zA-Z]+</value>
+  </data>
+  <data name="RegexOSNamePatternWindowsMobile" xml:space="preserve">
+    <value>(^[a-zA-Z]+)</value>
+  </data>
+  <data name="RegexOSNamePatternWindowsPhone" xml:space="preserve">
+    <value>(^[a-zA-Z]+\s[a-zA-Z]+)</value>
+  </data>
+  <data name="RegexOSNamePatternWindowsRT" xml:space="preserve">
+    <value>(^[a-zA-Z]+\s[a-zA-Z]+)</value>
+  </data>
+  <data name="RootNamespace" xml:space="preserve">
+    <value>MGK.DeviceHelper</value>
+  </data>
+  <data name="SafariLt30CommercialVersion1" xml:space="preserve">
+    <value>1.2</value>
+  </data>
+  <data name="SafariLt30CommercialVersion3" xml:space="preserve">
+    <value>1.3</value>
+  </data>
+  <data name="SafariLt30CommercialVersion412" xml:space="preserve">
+    <value>2.0</value>
+  </data>
+  <data name="SafariLt30CommercialVersion416" xml:space="preserve">
+    <value>2.0.2</value>
+  </data>
+  <data name="SafariLt30CommercialVersion417" xml:space="preserve">
+    <value>2.0.3</value>
+  </data>
+  <data name="SafariLt30CommercialVersion419" xml:space="preserve">
+    <value>2.0.4</value>
+  </data>
+  <data name="SafariLt30CommercialVersion8" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="SafariLt30CommercialVersionUnknown" xml:space="preserve">
+    <value>/</value>
+  </data>
+  <data name="SafariLt30Version1" xml:space="preserve">
+    <value>/1</value>
+  </data>
+  <data name="SafariLt30Version3" xml:space="preserve">
+    <value>/3</value>
+  </data>
+  <data name="SafariLt30Version412" xml:space="preserve">
+    <value>/412</value>
+  </data>
+  <data name="SafariLt30Version416" xml:space="preserve">
+    <value>/416</value>
+  </data>
+  <data name="SafariLt30Version417" xml:space="preserve">
+    <value>/417</value>
+  </data>
+  <data name="SafariLt30Version419" xml:space="preserve">
+    <value>/419</value>
+  </data>
+  <data name="SafariLt30Version8" xml:space="preserve">
+    <value>/8</value>
+  </data>
+  <data name="SafariLt30VersionUnknown" xml:space="preserve">
+    <value>?</value>
+  </data>
+  <data name="Underscore" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="WhiteSpace" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="WindowsCommercialVersion490" xml:space="preserve">
+    <value>ME</value>
+  </data>
+  <data name="WindowsCommercialVersionARM" xml:space="preserve">
+    <value>RT</value>
+  </data>
+  <data name="WindowsCommercialVersionNT100" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="WindowsCommercialVersionNT351" xml:space="preserve">
+    <value>NT 3.11</value>
+  </data>
+  <data name="WindowsCommercialVersionNT40" xml:space="preserve">
+    <value>NT 4.0</value>
+  </data>
+  <data name="WindowsCommercialVersionNT50" xml:space="preserve">
+    <value>2000</value>
+  </data>
+  <data name="WindowsCommercialVersionNT51" xml:space="preserve">
+    <value>XP</value>
+  </data>
+  <data name="WindowsCommercialVersionNT52" xml:space="preserve">
+    <value>XP</value>
+  </data>
+  <data name="WindowsCommercialVersionNT60" xml:space="preserve">
+    <value>Vista</value>
+  </data>
+  <data name="WindowsCommercialVersionNT61" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="WindowsCommercialVersionNT62" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="WindowsCommercialVersionNT63" xml:space="preserve">
+    <value>8.1</value>
+  </data>
+  <data name="WindowsCommercialVersionNT64" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="WindowsVersion490" xml:space="preserve">
+    <value>4.90</value>
+  </data>
+  <data name="WindowsVersionARM" xml:space="preserve">
+    <value>ARM</value>
+  </data>
+  <data name="WindowsVersionNT100" xml:space="preserve">
+    <value>NT 10.0</value>
+  </data>
+  <data name="WindowsVersionNT351" xml:space="preserve">
+    <value>NT3.51</value>
+  </data>
+  <data name="WindowsVersionNT40" xml:space="preserve">
+    <value>NT4.0</value>
+  </data>
+  <data name="WindowsVersionNT50" xml:space="preserve">
+    <value>NT 5.0</value>
+  </data>
+  <data name="WindowsVersionNT51" xml:space="preserve">
+    <value>NT 5.1</value>
+  </data>
+  <data name="WindowsVersionNT52" xml:space="preserve">
+    <value>NT 5.2</value>
+  </data>
+  <data name="WindowsVersionNT60" xml:space="preserve">
+    <value>NT 6.0</value>
+  </data>
+  <data name="WindowsVersionNT61" xml:space="preserve">
+    <value>NT 6.1</value>
+  </data>
+  <data name="WindowsVersionNT62" xml:space="preserve">
+    <value>NT 6.2</value>
+  </data>
+  <data name="WindowsVersionNT63" xml:space="preserve">
+    <value>NT 6.3</value>
+  </data>
+  <data name="WindowsVersionNT64" xml:space="preserve">
+    <value>NT 6.4</value>
+  </data>
+  <data name="OSNameNintendoDS" xml:space="preserve">
+    <value>Nintendo DS</value>
+  </data>
+  <data name="BrowserNamePrefix" xml:space="preserve">
+    <value>BrowserName{0}</value>
+  </data>
+  <data name="OSNamePrefix" xml:space="preserve">
+    <value>OSName{0}</value>
+  </data>
+  <data name="BrowserNameAppEngineGoogle" xml:space="preserve">
+    <value>AppEngine-Google</value>
+  </data>
+  <data name="BrowserNamePlaystation3" xml:space="preserve">
+    <value>Playstation 3</value>
+  </data>
+  <data name="OSNamePlaystation3" xml:space="preserve">
+    <value>CellOS</value>
+  </data>
+  <data name="BrowserNamePlaystationPortable" xml:space="preserve">
+    <value>NetFront</value>
+  </data>
+  <data name="BrowserNameWiiLibnup" xml:space="preserve">
+    <value>Wii Libnup</value>
+  </data>
+  <data name="BrowserNameZeroZeroEight" xml:space="preserve">
+    <value>008</value>
+  </data>
+  <data name="BrowserNameAccoonaAIAgent" xml:space="preserve">
+    <value>Accoona-AI-Agent</value>
+  </data>
+  <data name="BrowserNameBlitzBOT" xml:space="preserve">
+    <value>B-l-i-t-z-B-O-T</value>
+  </data>
+  <data name="UserAgentOriginCloudPlatform" xml:space="preserve">
+    <value>Cloud Platform</value>
+  </data>
+  <data name="UserAgentOriginEmailClient" xml:space="preserve">
+    <value>Email Client</value>
+  </data>
+  <data name="UserAgentOriginEmailCollector" xml:space="preserve">
+    <value>Email Collector</value>
+  </data>
+  <data name="UserAgentOriginFeedReader" xml:space="preserve">
+    <value>Feed Reader</value>
+  </data>
+  <data name="UserAgentOriginLinkChecker" xml:space="preserve">
+    <value>Link Checker</value>
+  </data>
+  <data name="UserAgentOriginMobileBrowser" xml:space="preserve">
+    <value>Mobile Browser</value>
+  </data>
+  <data name="UserAgentOriginOfflineBrowser" xml:space="preserve">
+    <value>Offline Browser</value>
+  </data>
+  <data name="UserAgentOriginPrefix" xml:space="preserve">
+    <value>UserAgentOrigin{0}</value>
+  </data>
+  <data name="UserAgentOriginWebBrowser" xml:space="preserve">
+    <value>Web Browser</value>
+  </data>
+  <data name="UserAgentOriginWebCrawler" xml:space="preserve">
+    <value>Web Crawler</value>
+  </data>
+  <data name="BrowserNameEveryfeedSpider" xml:space="preserve">
+    <value>Everyfeed Spider</value>
+  </data>
+  <data name="BrowserNameFeedFetcherGoogle" xml:space="preserve">
+    <value>Feed Fetcher Google</value>
+  </data>
+  <data name="BrowserNameGreatNews" xml:space="preserve">
+    <value>Great News</value>
+  </data>
+  <data name="BrowserNameLinkExaminer" xml:space="preserve">
+    <value>Link Examiner</value>
+  </data>
+  <data name="BrowserNameLinksManagerComBot" xml:space="preserve">
+    <value>Links manager.com Bot</value>
+  </data>
+  <data name="BrowserNameLinkValet" xml:space="preserve">
+    <value>Link Valet</value>
+  </data>
+  <data name="BrowserNameLinkValidityCheck" xml:space="preserve">
+    <value>Link Validity Check</value>
+  </data>
+  <data name="BrowserNameMagpieRSS" xml:space="preserve">
+    <value>Magpie RSS</value>
+  </data>
+  <data name="BrowserNameMicrosoftURLControl" xml:space="preserve">
+    <value>Microsoft URL Control</value>
+  </data>
+  <data name="BrowserNameMojooRobot" xml:space="preserve">
+    <value>Mojoo Robot</value>
+  </data>
+  <data name="BrowserNameNFReader" xml:space="preserve">
+    <value>NF Reader</value>
+  </data>
+  <data name="BrowserNameOfflineExplorer" xml:space="preserve">
+    <value>Offline Explorer</value>
+  </data>
+  <data name="BrowserNameOnlineLinkValidator" xml:space="preserve">
+    <value>Online Link Validator</value>
+  </data>
+  <data name="BrowserNamePloetzZeller" xml:space="preserve">
+    <value>Ploetz + Zeller</value>
+  </data>
+  <data name="BrowserNameReciprocalLinkSystemPRO" xml:space="preserve">
+    <value>Reciprocal Link System PRO</value>
+  </data>
+  <data name="BrowserNameRELLinkCheckerLite" xml:space="preserve">
+    <value>REL Link Checker Lite</value>
+  </data>
+  <data name="BrowserNameUniversalFeedParser" xml:space="preserve">
+    <value>Universal Feed Parser</value>
+  </data>
+  <data name="BrowserNameVivanteLinkChecker" xml:space="preserve">
+    <value>Vivante Link Checker</value>
+  </data>
+  <data name="BrowserNameW3CChecklink" xml:space="preserve">
+    <value>W3C Checklink</value>
+  </data>
+  <data name="BrowserNameWebDownloader" xml:space="preserve">
+    <value>Web Downloader</value>
+  </data>
+  <data name="BrowserNameXenuLinkSleuth" xml:space="preserve">
+    <value>Xenu Link Sleuth</value>
+  </data>
+  <data name="DeviceTypeGamingConsole" xml:space="preserve">
+    <value>Gaming Console</value>
+  </data>
+  <data name="DeviceTypePrefix" xml:space="preserve">
+    <value>DeviceType{0}</value>
+  </data>
+  <data name="UserAgentOriginLibraryOrApp" xml:space="preserve">
+    <value>Library/Application</value>
+  </data>
+  <data name="VersionPartPrefix" xml:space="preserve">
+    <value>VersionPart{0}</value>
+  </data>
+  <data name="VersionPartRevisionOrBuild" xml:space="preserve">
+    <value>Revision/Build</value>
+  </data>
+  <data name="BrowserNameITunes" xml:space="preserve">
+    <value>iTunes</value>
+  </data>
+  <data name="BrowserNameLftp" xml:space="preserve">
+    <value>lftp</value>
+  </data>
+  <data name="BrowserNameNitroPDF" xml:space="preserve">
+    <value>Nitro PDF</value>
+  </data>
+  <data name="BrowserNameSusie" xml:space="preserve">
+    <value>!Susie</value>
+  </data>
+  <data name="BrowserNameURDMAGPIE" xml:space="preserve">
+    <value>URD-MAGPIE</value>
+  </data>
+  <data name="BrowserNameWindowsMediaPlayer" xml:space="preserve">
+    <value>Windows Media Player</value>
+  </data>
+  <data name="BrowserNameAccoonaAIAgent1" xml:space="preserve">
+    <value>Accoona-AI-Agent</value>
+  </data>
+  <data name="BrowserNameBoithoComDc" xml:space="preserve">
+    <value>boitho.com-dc</value>
+  </data>
+  <data name="BrowserNameBoithoComRobot" xml:space="preserve">
+    <value>boitho.com-robot</value>
+  </data>
+  <data name="BrowserNameBtbot" xml:space="preserve">
+    <value>btbot</value>
+  </data>
+  <data name="BrowserNameCerberianDrtrs" xml:space="preserve">
+    <value>Cerberian Drtrs</value>
+  </data>
+  <data name="BrowserNameCosmos" xml:space="preserve">
+    <value>cosmos</value>
+  </data>
+  <data name="BrowserNameCovarioIDS" xml:space="preserve">
+    <value>Covario IDS</value>
+  </data>
+  <data name="BrowserNameDomainsDBMetaCrawler" xml:space="preserve">
+    <value>DomainsDB MetaCrawler</value>
+  </data>
+  <data name="BrowserNameEmeraldShieldComWebBot" xml:space="preserve">
+    <value>EmeraldShield.com WebBot</value>
+  </data>
+  <data name="BrowserNameEnvolkITSspider" xml:space="preserve">
+    <value>envolk[ITS]spider</value>
+  </data>
+  <data name="BrowserNameFASTEnterpriseCrawler" xml:space="preserve">
+    <value>FAST Enterprise Crawler</value>
+  </data>
+  <data name="BrowserNameFASTWebCrawler" xml:space="preserve">
+    <value>FAST-WebCrawler</value>
+  </data>
+  <data name="BrowserNameFDSERobot" xml:space="preserve">
+    <value>FDSE robotFDSE robot</value>
+  </data>
+  <data name="BrowserNameG2Crawler" xml:space="preserve">
+    <value>g2crawler</value>
+  </data>
+  <data name="BrowserNameGenieBot" xml:space="preserve">
+    <value>genieBot</value>
+  </data>
+  <data name="BrowserNameGooglebotImage" xml:space="preserve">
+    <value>Googlebot-Image</value>
+  </data>
+  <data name="BrowserNameHlFtienSpider" xml:space="preserve">
+    <value>hl_ftien_spider</value>
+  </data>
+  <data name="BrowserNameHtdig" xml:space="preserve">
+    <value>htdig</value>
+  </data>
+  <data name="BrowserNameIaArchiver" xml:space="preserve">
+    <value>ia_archiver</value>
+  </data>
+  <data name="BrowserNameIaskspider" xml:space="preserve">
+    <value>iaskspider</value>
+  </data>
+  <data name="BrowserNameICCrawler" xml:space="preserve">
+    <value>iCCrawler</value>
+  </data>
+  <data name="BrowserNameIchiro" xml:space="preserve">
+    <value>ichiro</value>
+  </data>
+  <data name="BrowserNameIgdeSpyder" xml:space="preserve">
+    <value>igdeSpyder</value>
+  </data>
+  <data name="BrowserNameJaxifiedBot" xml:space="preserve">
+    <value>Jaxified Bot</value>
+  </data>
+  <data name="BrowserNameLingueeBot" xml:space="preserve">
+    <value>Linguee Bot</value>
+  </data>
+  <data name="BrowserNameLWebis" xml:space="preserve">
+    <value>L.webis</value>
+  </data>
+  <data name="BrowserNameLwpTrivial" xml:space="preserve">
+    <value>lwp-trivial</value>
+  </data>
+  <data name="BrowserNameMabontland" xml:space="preserve">
+    <value>mabontland</value>
+  </data>
+  <data name="BrowserNameMagpieCrawler" xml:space="preserve">
+    <value>magpie-crawler</value>
+  </data>
+  <data name="BrowserNameMediapartnersGoogle" xml:space="preserve">
+    <value>Mediapartners-Google</value>
+  </data>
+  <data name="BrowserNameMogi" xml:space="preserve">
+    <value>mogi</value>
+  </data>
+  <data name="BrowserNameMorningPaper" xml:space="preserve">
+    <value>Morning Paper</value>
+  </data>
+  <data name="BrowserNameMsnbot" xml:space="preserve">
+    <value>msnbot</value>
+  </data>
+  <data name="BrowserNameMxbot" xml:space="preserve">
+    <value>mxbot</value>
+  </data>
+  <data name="BrowserNameNetSeerCrawler" xml:space="preserve">
+    <value>NetSeer Crawler</value>
+  </data>
+  <data name="BrowserNameNGSearch" xml:space="preserve">
+    <value>NG-Search</value>
+  </data>
+  <data name="BrowserNameNicebot" xml:space="preserve">
+    <value>nicebot</value>
+  </data>
+  <data name="BrowserNameNoxtrumbot" xml:space="preserve">
+    <value>noxtrumbot</value>
+  </data>
+  <data name="BrowserNameNusearchSpider" xml:space="preserve">
+    <value>Nusearch Spider</value>
+  </data>
+  <data name="BrowserNameObot" xml:space="preserve">
+    <value>obot</value>
+  </data>
+  <data name="BrowserNameOegp" xml:space="preserve">
+    <value>oegp</value>
+  </data>
+  <data name="BrowserNameOmgilibot" xml:space="preserve">
+    <value>omgilibot</value>
+  </data>
+  <data name="BrowserNameOmniExplorerBot" xml:space="preserve">
+    <value>OmniExplorer_Bot</value>
+  </data>
+  <data name="BrowserNamePolybot" xml:space="preserve">
+    <value>polybot</value>
+  </data>
+  <data name="BrowserNameSemanticDiscovery" xml:space="preserve">
+    <value>semanticdiscovery</value>
+  </data>
+  <data name="BrowserNameSensisWebCrawler" xml:space="preserve">
+    <value>Sensis Web Crawler</value>
+  </data>
+  <data name="BrowserNameSEOChatBot" xml:space="preserve">
+    <value>SEOChat::Bot</value>
+  </data>
+  <data name="BrowserNameShimCrawler" xml:space="preserve">
+    <value>Shim-Crawler</value>
+  </data>
+  <data name="BrowserNameShoulaRobot" xml:space="preserve">
+    <value>Shoula robot</value>
+  </data>
+  <data name="BrowserNameSilk" xml:space="preserve">
+    <value>silk</value>
+  </data>
+  <data name="BrowserNameSogouSpider" xml:space="preserve">
+    <value>sogou spider</value>
+  </data>
+  <data name="BrowserNameSpeedySpider" xml:space="preserve">
+    <value>Speedy Spider</value>
+  </data>
+  <data name="BrowserNameSuggybot" xml:space="preserve">
+    <value>suggybot</value>
+  </data>
+  <data name="BrowserNameThumbnailCZRobot" xml:space="preserve">
+    <value>Thumbnail.CZ robot</value>
+  </data>
+  <data name="BrowserNameTruwoGPS" xml:space="preserve">
+    <value>truwoGPS</value>
+  </data>
+  <data name="BrowserNameTweetedTimesBot" xml:space="preserve">
+    <value>TweetedTimes Bot</value>
+  </data>
+  <data name="BrowserNameUpdated" xml:space="preserve">
+    <value>updated</value>
+  </data>
+  <data name="BrowserNameVoyager" xml:space="preserve">
+    <value>voyager</value>
+  </data>
+  <data name="BrowserNameWebcollage" xml:space="preserve">
+    <value>webcollage</value>
+  </data>
+  <data name="BrowserNameWebsquashCom" xml:space="preserve">
+    <value>Websquash.com</value>
+  </data>
+  <data name="BrowserNameWf84" xml:space="preserve">
+    <value>wf84</value>
+  </data>
+  <data name="BrowserNameWoFindeIchRobot" xml:space="preserve">
+    <value>WoFindeIch Robot</value>
+  </data>
+  <data name="BrowserNameXaldonWebSpider" xml:space="preserve">
+    <value>Xaldon_WebSpider</value>
+  </data>
+  <data name="BrowserNameYacy" xml:space="preserve">
+    <value>yacy</value>
+  </data>
+  <data name="BrowserNameYahooSeekerTesting" xml:space="preserve">
+    <value>YahooSeeker-Testing</value>
+  </data>
+  <data name="BrowserNameYahooSlurp" xml:space="preserve">
+    <value>Yahoo! Slurp</value>
+  </data>
+  <data name="BrowserNameYahooSlurpChina" xml:space="preserve">
+    <value>Yahoo! Slurp China</value>
+  </data>
+  <data name="BrowserNameYoogliFetchAgent" xml:space="preserve">
+    <value>yoogliFetchAgent</value>
+  </data>
+  <data name="BrowserNameZeroZeroEight1" xml:space="preserve">
+    <value>008</value>
+  </data>
+  <data name="BrowserNameZspider" xml:space="preserve">
+    <value>zspider</value>
+  </data>
+</root>

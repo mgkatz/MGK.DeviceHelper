@@ -1,0 +1,49 @@
+﻿<Window x:Name="FrmUserAgentTest" x:Class="MGK.DeviceHelper.UserAgentTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MGK.DeviceHelper.UserAgentTest"
+        mc:Ignorable="d"
+        Title="User Agent Test" Height="429" Width="358" ResizeMode="NoResize">
+	<Grid x:Name="CntMain">
+		<TabControl x:Name="CntMainOptions" HorizontalAlignment="Stretch" Margin="5,5,0,0" VerticalAlignment="Stretch" SelectedIndex="0" SelectionChanged="CntMainOptions_SelectionChanged">
+			<TabControl.Items>
+				<TabItem x:Name="TabSingleCheck" Header="Single check">
+					<Grid Background="#FFE5E5E5">
+						<Label x:Name="LblUserAgent" Content="User Agent" HorizontalAlignment="Left" Margin="6,2,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Padding="0,5,5,5"/>
+						<TextBox x:Name="TxtUserAgent" HorizontalAlignment="Left" Height="100" Margin="6,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="320" ToolTip="The User Agent to evaluate."/>
+						<Label x:Name="LblOrigin" Content="Origin" HorizontalAlignment="Left" Margin="6,168,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Padding="0,5,5,5"/>
+						<TextBox x:Name="TxtOrigin" HorizontalAlignment="Left" Height="23" Margin="6,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" ToolTip="The User Agent to evaluate." IsEnabled="False"/>
+						<Label x:Name="LblOSName" Content="Operating System" HorizontalAlignment="Left" Margin="6,230,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Padding="0,5,5,5"/>
+						<TextBox x:Name="TxtOSName" HorizontalAlignment="Left" Height="23" Margin="6,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" ToolTip="The User Agent to evaluate." IsEnabled="False"/>
+						<Label x:Name="LblOSVersion" Content="Version" HorizontalAlignment="Left" Margin="226,230,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Padding="0,5,5,5"/>
+						<TextBox x:Name="TxtOSVersion" HorizontalAlignment="Left" Height="23" Margin="226,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" ToolTip="The User Agent to evaluate." IsEnabled="False"/>
+						<Label x:Name="LblBrowserName" Content="Browser" HorizontalAlignment="Left" Margin="6,290,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Padding="0,5,5,5"/>
+						<TextBox x:Name="TxtBrowserName" HorizontalAlignment="Left" Height="23" Margin="6,322,0,-10.6" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" ToolTip="The User Agent to evaluate." IsEnabled="False"/>
+						<Label x:Name="LblBrowserVersion" Content="Version" HorizontalAlignment="Left" Margin="226,290,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Padding="0,5,5,5"/>
+						<TextBox x:Name="TxtBrowserVersion" HorizontalAlignment="Left" Height="23" Margin="226,322,0,-10.6" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" ToolTip="The User Agent to evaluate." IsEnabled="False"/>
+						<Button Content="Process User Agent" HorizontalAlignment="Left" Margin="6,139,0,0" VerticalAlignment="Top" Width="321" FontSize="16" FontWeight="Bold" Click="Button_Click"/>
+						<Label x:Name="LblDeviceType" Content="Device" HorizontalAlignment="Left" Margin="227,168,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Padding="0,5,5,5"/>
+						<TextBox x:Name="TxtDeviceType" HorizontalAlignment="Left" Height="23" Margin="227,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" ToolTip="The User Agent to evaluate." IsEnabled="False"/>
+					</Grid>
+				</TabItem>
+				<TabItem x:Name="TabMultipleCheck" Header="Multiple check">
+					<Grid Background="#FFE5E5E5">
+						<Label x:Name="LblMultipleCheck" Content="Copy &amp; Paste User Agents" HorizontalAlignment="Left" Margin="6,2,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Padding="0,5,5,5"/>
+						<Grid x:Name="GrdMultipleCheck" Background="#FFFFFF" HorizontalAlignment="Stretch" Height="100" Margin="6,35,0,0" VerticalAlignment="Top">
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition x:Name="ColUserAgent" ToolTip="The list of user agents." Width="4*"/>
+								<ColumnDefinition x:Name="ColDevice" ToolTip="The list of devices that correspond with the respective user agent." Width="2*"/>
+								<ColumnDefinition x:Name="ColOS" ToolTip="The list of operating systems that correspond with the respective user agent." Width="2*"/>
+								<ColumnDefinition x:Name="ColOSVersion" ToolTip="The version of the respective operating system." Width="1*"/>
+								<ColumnDefinition x:Name="ColBrowser" ToolTip="The list of browsers that correspond with the respective user agent." Width="2*"/>
+								<ColumnDefinition x:Name="ColBrowserVersion" ToolTip="The version of the respective browser." Width="1*"/>
+							</Grid.ColumnDefinitions>
+						</Grid>
+					</Grid>
+				</TabItem>
+			</TabControl.Items>
+		</TabControl>
+	</Grid>
+</Window>

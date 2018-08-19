@@ -1,22 +1,22 @@
-﻿namespace MGK.DeviceHelper.Enums
+﻿using MGK.DeviceHelper.Helpers;
+
+namespace MGK.DeviceHelper.Enums
 {
 	/// <summary>
 	/// It is the enumeration of the generic name for the Browsers considered here.
 	/// </summary>
 	public enum BrowserName
 	{
+		Unknown = 0,
 		AndroidBrowser = 1,
 		AvantIEMobileSlimBrowserBaidu = 2,
-		Chrome = 45,
 		ChromeAndroidiOS = 3,
 		ChromeOmniWebAroraTizenNokia = 4,
 		ChromeWebView = 5,
 		ChromiumFlockRockMeltMidoriEpiphanySilkSkyfireBoltIronIridiumPhantomJS = 6,
 		ComodoDragon = 7,
 		Dolphin = 8,
-		Facebook = 46,
 		FacebookAppiOS = 9,
-		Firefox = 47,
 		FirefoxiOS = 10,
 		FirefoxSeaMonkeyKMeleonIceCatIceApeFirebirdPhoenix = 11,
 		GoBrowser = 12,
@@ -34,14 +34,13 @@
 		Mosaic = 24,
 		Mozilla = 25,
 		Netscape = 26,
-		Opera = 44,
 		OperaGT980 = 27,
 		OperaLT980 = 28,
 		OperaMini = 29,
 		OperaMiniIphoneGTE80 = 30,
 		OperaMobiTablet = 31,
 		OperaWebkit = 32,
-		PolarisLynxDilloiCabDorisAmayaw3mNetSurfSleipnir = 33,
+		PolarisLynxDilloiCabDorisw3mNetSurfSleipnir = 33,
 		QQBrowser = 34,
 		Rekonq = 35,
 		SafariAndSafariMobile = 36,
@@ -49,110 +48,255 @@
 		SamsungBrowser = 38,
 		Swiftfox = 39,
 		UCBrowser = 40,
-		Unknown = 0,
 		Webkit = 41,
 		WeChat = 42,
-		Yandex = 43
+		Yandex = 43,
+		Opera = 44,
+		Chrome = 45,
+		Facebook = 46,
+		Firefox = 47,
+		Bunjalloo = 48,
+		AppEngineGoogle = 49,
+		Playstation3 = 50,
+		PlaystationPortable = 51,
+		WiiLibnup = 52,
+		ZeroZeroEight = 53,
+		ABACHOBot = 54,
+		AccoonaAIAgent = 55,
+		AddSugarSpiderBot = 56,
+		AnyApexBot = 57,
+		Arachmo = 58,
+		BlitzBOT = 59,
+		Baiduspider = 60,
+		BecomeBot = 61,
+		Thunderbird = 62,
+		EmailSiphon = 63,
+		Bloglines = 64,
+		EveryfeedSpider = 65,
+		FeedFetcherGoogle = 66,
+		GreatNews = 67,
+		Gregarius = 68,
+		MagpieRSS = 69,
+		NFReader = 70,
+		UniversalFeedParser = 71,
+		BinGet = 72,
+		CURL = 73,
+		Java = 74,
+		Perl = 75,
+		MicrosoftURLControl = 76,
+		Peach = 77,
+		PHP = 78,
+		Pxyscand = 79,
+		Python = 80,
+		AbiLogicBot = 81,
+		LinkValet = 82,
+		LinkValidityCheck = 83,
+		LinkExaminer = 84,
+		LinksManagerComBot = 85,
+		MojooRobot = 86,
+		Notifixious = 87,
+		OnlineLinkValidator = 88,
+		PloetzZeller = 89,
+		ReciprocalLinkSystemPRO = 90,
+		RELLinkCheckerLite = 91,
+		SiteBar = 92,
+		VivanteLinkChecker = 93,
+		W3CChecklink = 94,
+		XenuLinkSleuth = 95,
+		OfflineExplorer = 96,
+		SuperBot = 97,
+		WebDownloader = 98,
+		WebCopier = 99,
+		WebZIP = 100,
+		Wget = 101,
+		Susie = 102,
+		Amaya = 103,
+		Cocoalicious = 104,
+		ITunes = 105,
+		Lftp = 106,
+		MetaURI = 107,
+		NitroPDF = 108,
+		Snoopy = 109,
+		URDMAGPIE = 110,
+		WebCapture = 111,
+		WindowsMediaPlayer = 112,
+		BeslistBot = 113,
+		BillyBobBot = 114,
+		Bimbot = 115,
+		Bingbot = 116,
+		BoithoComDc = 117,
+		BoithoComRobot = 118,
+		Btbot = 119,
+		CatchBot = 120,
+		CerberianDrtrs = 121,
+		Charlotte = 122,
+		ConveraCrawler = 123,
+		Cosmos = 124,
+		CovarioIDS = 125,
+		DataparkSearch = 126,
+		DiamondBot = 127,
+		Discobot = 128,
+		DomainsDBMetaCrawler = 129,
+		Dotbot = 130,
+		EmeraldShieldComWebBot = 131,
+		EnvolkITSspider = 132,
+		EsperanzaBot = 133,
+		Exabot = 134,
+		FASTEnterpriseCrawler = 135,
+		FASTWebCrawler = 136,
+		FDSERobot = 137,
+		FindLinks = 138,
+		FurlBot = 139,
+		FyberSpider = 140,
+		G2Crawler = 141,
+		Gaisbot = 142,
+		GalaxyBot = 143,
+		GenieBot = 144,
+		Gigabot = 145,
+		Girafabot = 146,
+		Googlebot = 147,
+		GooglebotImage = 148,
+		GSiteCrawler = 149,
+		GurujiBot = 150,
+		HappyFunBot = 151,
+		HlFtienSpider = 152,
+		Holmes = 153,
+		Htdig = 154,
+		Iaskspider = 155,
+		IaArchiver = 156,
+		ICCrawler = 157,
+		Ichiro = 158,
+		IgdeSpyder = 159,
+		IRLbot = 160,
+		IssueCrawler = 161,
+		JaxifiedBot = 162,
+		Jyxobot = 163,
+		KoepaBot = 164,
+		LWebis = 165,
+		LapozzBot = 166,
+		Larbin = 167,
+		LDSpider = 168,
+		LexxeBot = 169,
+		LingueeBot = 170,
+		LinkWalker = 171,
+		Lmspider = 172,
+		LwpTrivial = 173,
+		Mabontland = 174,
+		MagpieCrawler = 175,
+		MediapartnersGoogle = 176,
+		MJ12bot = 177,
+		Mnogosearch = 178,
+		Mogi = 179,
+		MojeekBot = 180,
+		Moreoverbot = 181,
+		MorningPaper = 182,
+		Msnbot = 183,
+		MSRBot = 184,
+		MVAClient = 185,
+		Mxbot = 186,
+		NetResearchServer = 187,
+		NetSeerCrawler = 188,
+		NewsGator = 189,
+		NGSearch = 190,
+		Nicebot = 191,
+		Noxtrumbot = 192,
+		NusearchSpider = 193,
+		NutchCVS = 194,
+		Nymesis = 195,
+		Obot = 196,
+		Oegp = 197,
+		Omgilibot = 198,
+		OmniExplorerBot = 199,
+		OOZBOT = 200,
+		Orbiter = 201,
+		PageBitesHyperBot = 202,
+		Peew = 203,
+		Polybot = 204,
+		Pompos = 205,
+		Post = 206,
+		Psbot = 207,
+		PycURL = 208,
+		Qseero = 209,
+		Radian6 = 210,
+		RAMPyBot = 211,
+		RufusBot = 212,
+		SandCrawler = 213,
+		SBIder = 214,
+		ScoutJet = 215,
+		Scrubby = 216,
+		SearchSight = 217,
+		Seekbot = 218,
+		SemanticDiscovery = 219,
+		SensisWebCrawler = 220,
+		SEOChatBot = 221,
+		SeznamBot = 222,
+		ShimCrawler = 223,
+		ShopWiki = 224,
+		ShoulaRobot = 225,
+		Silk = 226,
+		Sitebot = 227,
+		Snappy = 228,
+		SogouSpider = 229,
+		Sosospider = 230,
+		SpeedySpider = 231,
+		Sqworm = 232,
+		StackRambler = 233,
+		Suggybot = 234,
+		SurveyBot = 235,
+		SynooBot = 236,
+		Teoma = 237,
+		TerrawizBot = 238,
+		TheSuBot = 239,
+		ThumbnailCZRobot = 240,
+		TinEye = 241,
+		TruwoGPS = 242,
+		TurnitinBot = 243,
+		TweetedTimesBot = 244,
+		TwengaBot = 245,
+		Updated = 246,
+		Urlfilebot = 247,
+		Vagabondo = 248,
+		VoilaBot = 249,
+		Vortex = 250,
+		Voyager = 251,
+		VYU2 = 252,
+		Webcollage = 253,
+		WebsquashCom = 254,
+		Wf84 = 255,
+		WoFindeIchRobot = 256,
+		WomlpeFactory = 257,
+		XaldonWebSpider = 258,
+		Yacy = 259,
+		YahooSlurp = 260,
+		YahooSlurpChina = 261,
+		YahooSeeker = 262,
+		YahooSeekerTesting = 263,
+		YandexBot = 264,
+		YandexImages = 265,
+		Yasaklibot = 266,
+		Yeti = 267,
+		YodaoBot = 268,
+		YoogliFetchAgent = 269,
+		YoudaoBot = 270,
+		Zao = 271,
+		Zealbot = 272,
+		Zspider = 273,
+		ZyBorg = 274
 	}
 
 	public static class BrowserNameExtensions
 	{
 		/// <summary>
-		/// Gets a generic name to display for every value in the enumaration.
+		/// Gets a generic name to display for every value in the enumeration.
 		/// </summary>
 		/// <param name="source">The value of the enumeration.</param>
 		/// <returns>A string with generic name to display.</returns>
 		public static string GetDisplayName(this BrowserName source)
 		{
-			switch (source)
-			{
-				case BrowserName.AndroidBrowser:
-					return "Android Browser";
-
-				case BrowserName.AvantIEMobileSlimBrowserBaidu:
-					return "Avant/IEMobile/SlimBrowser/Baidu";
-
-				case BrowserName.ChromeAndroidiOS:
-					return "Chrome for Android/iOS";
-
-				case BrowserName.ChromeOmniWebAroraTizenNokia:
-					return "Chrome/OmniWeb/Arora/Tizen/Nokia";
-
-				case BrowserName.ChromeWebView:
-					return "Chrome WebView";
-
-				case BrowserName.ChromiumFlockRockMeltMidoriEpiphanySilkSkyfireBoltIronIridiumPhantomJS:
-					return "Chromium/Flock/RockMelt/Midori/Epiphany/Silk/Skyfire/Bolt/Iron/Iridium/PhantomJS";
-
-				case BrowserName.ComodoDragon:
-					return "Comodo Dragon";
-
-				case BrowserName.FacebookAppiOS:
-					return "Facebook App for iOS";
-
-				case BrowserName.FirefoxiOS:
-					return "Firefox for iOS";
-
-				case BrowserName.FirefoxSeaMonkeyKMeleonIceCatIceApeFirebirdPhoenix:
-					return "Firefox/SeaMonkey/K-Meleon/IceCat/IceApe/Firebird/Phoenix";
-
-				case BrowserName.ICEBrowser:
-					return "ICE Browser";
-
-				case BrowserName.IceDragonIceweaselCaminoChimeraFennecMaemoMinimoConkeror:
-					return "IceDragon/Iceweasel/Camino/Chimera/Fennec/Maemo/Minimo/Conkeror";
-
-				case BrowserName.IE11:
-					return "Internet Explorer 11";
-
-				case BrowserName.InternetExplorer:
-					return "Internet Explorer";
-
-				case BrowserName.LunascapeMaxthonNetfrontJasmineBlazer:
-					return "Lunascape/Maxthon/Netfront/Jasmine/Blazer";
-
-				case BrowserName.MicrosoftEdge:
-					return "Microsoft Edge";
-
-				case BrowserName.MIUIBrowser:
-					return "MIUI Browser";
-
-				case BrowserName.MobileSafari:
-					return "Mobile Safari";
-
-				case BrowserName.OperaGT980:
-					return "Opera > 9.80";
-
-				case BrowserName.OperaLT980:
-					return "Opera < 9.80";
-
-				case BrowserName.OperaMini:
-					return "Opera Mini";
-
-				case BrowserName.OperaMiniIphoneGTE80:
-					return "Opera mini on iphone >= 8.0";
-
-				case BrowserName.OperaMobiTablet:
-					return "Opera Mobi/Tablet";
-
-				case BrowserName.OperaWebkit:
-					return "Opera Webkit";
-
-				case BrowserName.PolarisLynxDilloiCabDorisAmayaw3mNetSurfSleipnir:
-					return "Polaris/Lynx/Dillo/iCab/Doris/Amaya/w3m/NetSurf/Sleipnir";
-
-				case BrowserName.SafariAndSafariMobile:
-					return "Safari & Safari Mobile";
-
-				case BrowserName.SafariLT30:
-					return "Safari < 3.0";
-
-				case BrowserName.SamsungBrowser:
-					return "Samsung Browser";
-
-				default:
-					return source.ToString();
-			}
+			return ResourcesHelper
+				.GetDisplayName(
+					source.ToString(),
+					Resources.DefaultResources.BrowserNamePrefix);
 		}
 	}
 }

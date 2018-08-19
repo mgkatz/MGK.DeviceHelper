@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using MGK.DeviceHelper.Enums;
+using System.Text;
 
 namespace MGK.DeviceHelper.Console
 {
@@ -22,11 +23,11 @@ namespace MGK.DeviceHelper.Console
 
 		public static void Main(string[] args)
 		{
-		    SerializationChecking<RegexBrowserRecordModel>("regexbrowserrecords.json", ModelType.Browser);
+			SerializationChecking<BrowserModel, BrowserComplexRecord, BrowserName>("regexbrowserrecords.json", ModelType.Browser);
 
 			System.Console.WriteLine();
 
-		    SerializationChecking<RegexOSRecordModel>("regexosrecords.json", ModelType.OS);
+			SerializationChecking<OSModel, OSComplexRecord, OSName>("regexosrecords.json", ModelType.OS);
 
 			System.Console.WriteLine();
 
@@ -35,9 +36,12 @@ namespace MGK.DeviceHelper.Console
 			System.Console.ReadKey();
 		}
 
-	    private static void SerializationChecking<T>(string fileName, ModelType modelType) where T : class
-	    {
-	        var model = new List<T>();
+	    private static void SerializationChecking<TModel, TRecord, TName>(string fileName, ModelType modelType)
+			where TModel : ComplexModel<TRecord, TName>
+			where TRecord : class, IComplexRecord<TName>
+			where TName : struct
+		{
+			var model = new List<TRecord>();
 
 	        System.Console.WriteLine("Model list initialized.");
 
@@ -47,7 +51,7 @@ namespace MGK.DeviceHelper.Console
 	        System.Console.WriteLine($"Json file with the {modelType.ToString().ToLower()} records loaded.");
 
 			//Change SerializationHelper from internal to public in order to test it.
-			var regexModel = SerializationHelper.JsonDeserialize<RegexModel<T>>(jsonModel);
+			var regexModel = SerializationHelper.JsonDeserialize<TModel>(jsonModel);
 	        System.Console.WriteLine($"Json file with the {modelType.ToString()} records deserialized.");
 
 	        model.AddRange(regexModel.Records);
@@ -60,11 +64,40 @@ namespace MGK.DeviceHelper.Console
 			foreach (var userAgent in _userAgentsToTest)
 			{
 				var device = new Device(userAgent);
-				System.Console.WriteLine($"Browser detected: {device.Browser.Name} / Version: {device.Browser.Version} / Major: {device.Browser.Major}");
-				System.Console.WriteLine($"OS detected: {device.OS.Name} / Version: {device.OS.Version}");
+
+				System.Console.WriteLine(GetPlainInformation("Browser", device.Browser.Name, device.Browser.Version, device.Browser.Major, device.Browser.Minor, device.Browser.Build));
+				System.Console.WriteLine(GetPlainInformation("OS", device.OS.Name, device.OS.Version, device.OS.Major, device.OS.Minor, device.OS.Build));
 				System.Console.WriteLine($"Device type detected: {device.DeviceType.ToString()}");
 				System.Console.WriteLine();
 			}
 		}
-    }
+
+		private static string GetPlainInformation(string type, string name, string version, string major, string minor, string build)
+		{
+			var sb = new StringBuilder();
+			sb.Append($"{type} detected: {name}");
+
+			if (!string.IsNullOrWhiteSpace(version))
+			{
+				sb.Append($" / Version: {version}");
+
+				if (!string.IsNullOrWhiteSpace(major))
+				{
+					sb.Append($" / Major: {major}");
+
+					if (!string.IsNullOrWhiteSpace(minor))
+					{
+						sb.Append($" / Minor: {minor}");
+
+						if (!string.IsNullOrWhiteSpace(build))
+						{
+							sb.Append($" / Revision or Build: {build}");
+						}
+					}
+				}
+			}
+
+			return sb.ToString();
+		}
+	}
 }

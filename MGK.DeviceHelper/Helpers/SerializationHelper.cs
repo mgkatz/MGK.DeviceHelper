@@ -8,7 +8,7 @@ namespace MGK.DeviceHelper.Helpers
 	/// <summary>
 	/// This is a helper to serialize/deserialze the Json data but it could be used with any kind of data which has a class with a DataContract and DataMembers.
 	/// </summary>
-	internal sealed class SerializationHelper
+	public static class SerializationHelper
 	{
 		/// <summary>
 		/// Serialize a class to a string. In this project it is used to serialize Json data.

@@ -3,15 +3,15 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
 	<PackageId>MGK.DeviceHelper</PackageId>
-    <PackageVersion>1.2.2</PackageVersion>
-	<Version>1.2.2</Version>
+    <PackageVersion>1.2.3</PackageVersion>
+	<Version>1.2.3</Version>
     <Authors>Matías Gabriel Katz</Authors>
 	<Title>Device helper</Title>
-    <Description>Library useful for web projects to get information through the user agent about the browser, the operating system and the device type.</Description>
+    <Description>Library useful for web projects to get information about the browser, the operating system and the device itself.</Description>
 	<PackageLicenseUrl>http://www.gnu.org/licenses/agpl.html</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes>Bug fix on extension methods.</PackageReleaseNotes>
-    <Copyright>Copyright 2017 (c) Matías Gabriel Katz.</Copyright>
+    <PackageReleaseNotes>Some code improvements.</PackageReleaseNotes>
+    <Copyright>Copyright 2017 (c), 2018 (c) Matías Gabriel Katz.</Copyright>
     <PackageTags>useragent user agent browser device os operating system web projects</PackageTags>
   </PropertyGroup>
 
@@ -20,12 +20,24 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="regexosrecords.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="regexbrowserrecords.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <EmbeddedResource Include="regexosrecords.json" />
+    <EmbeddedResource Include="regexbrowserrecords.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\DefaultResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DefaultResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\DefaultResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DefaultResources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

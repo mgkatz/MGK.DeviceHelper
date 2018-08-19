@@ -1,4 +1,5 @@
-﻿using System.Runtime.Serialization;
+﻿using System.Collections.Generic;
+using System.Runtime.Serialization;
 
 namespace MGK.DeviceHelper.Models
 {
@@ -7,8 +8,28 @@ namespace MGK.DeviceHelper.Models
 	/// </summary>
 	/// <typeparam name="T">A class that represents a RegexOSRecordModel or a RegexBrowserRecordModel.</typeparam>
 	[DataContract]
-	public class RegexModel<T> : IRegexModel<T> where T : class
-    {
+	public abstract class ComplexModel<T, TName> : IModel<T>
+		where T : class, IComplexRecord<TName>
+		where TName : struct
+	{
+		#region Constructors
+		/// <summary>
+		/// Creates an instance of RegexModel class.
+		/// </summary>
+		protected ComplexModel()
+		{
+		}
+
+		/// <summary>
+		/// Creates an instance of RegexModel class based on the parameters.
+		/// </summary>
+		/// <param name="records">The records to assign to the model.</param>
+		protected ComplexModel(T[] records)
+		{
+			Records = records;
+		}
+		#endregion
+
 		#region Properties
 		/// <summary>
 		/// Gets the records with the data needed to get the Operating System or the Browser information.
@@ -17,22 +38,12 @@ namespace MGK.DeviceHelper.Models
 		public T[] Records { get; private set; }
 		#endregion
 
-		#region Constructors
+		#region Public methods
 		/// <summary>
-		/// Creates an instance of RegexModel class.
+		/// Gets the list of records summarized (only the name and regex).
 		/// </summary>
-		public RegexModel()
-		{
-		}
-
-		/// <summary>
-		/// Creates an instance of RegexModel class based on the parameters.
-		/// </summary>
-		/// <param name="records">The records to assign to the model.</param>
-		public RegexModel(T[] records)
-		{
-			Records = records;
-		}
+		/// <returns></returns>
+		public abstract IEnumerable<ISimpleRecord<TName>> GetSummarizedRecords();
 		#endregion
 
 		#region Equals and GetHashCode
@@ -41,7 +52,7 @@ namespace MGK.DeviceHelper.Models
 		/// </summary>
 		/// <param name="other">The object.</param>
 		/// <returns>True if the specified object is equal to the current object; otherwise, false.</returns>
-		protected bool Equals(RegexModel<T> other)
+		protected bool Equals(ComplexModel<T, TName> other)
 		{
 			if (other == null)
 				return false;
@@ -56,7 +67,7 @@ namespace MGK.DeviceHelper.Models
 		/// <returns>True if the specified object is equal to the current object; otherwise, false.</returns>
 		public override bool Equals(object obj)
 		{
-			return Equals(obj as RegexModel<T>);
+			return Equals(obj as ComplexModel<T, TName>);
 		}
 
 		/// <summary>

@@ -1,5 +1,6 @@
 ﻿using MGK.DeviceHelper.Enums;
 using MGK.DeviceHelper.Helpers;
+using System;
 using System.Text.RegularExpressions;
 
 namespace MGK.DeviceHelper
@@ -7,24 +8,12 @@ namespace MGK.DeviceHelper
 	/// <summary>
 	/// It represents the Operating System.
 	/// </summary>
-    public class OS : IOS
+    public class OS : IHasName, IHasVersion
 	{
 		#region Variables and private objects
 		private OSName _osName;
 		private Regex _regex;
 		private string _userAgent;
-		#endregion
-
-		#region Properties
-		/// <summary>
-		/// Gets the name of Operating System.
-		/// </summary>
-		public string Name { get; private set; }
-
-		/// <summary>
-		/// Gets the version of Operating System.
-		/// </summary>
-		public string Version { get; private set; }
 		#endregion
 
 		#region Constructors
@@ -52,13 +41,31 @@ namespace MGK.DeviceHelper
 		}
 		#endregion
 
+		#region Properties
+		public string Build => VersionHelper.GetVersionPart(VersionPart.RevisionOrBuild, Version);
+
+		public string Major => VersionHelper.GetVersionPart(VersionPart.Major, Version);
+
+		public string Minor => VersionHelper.GetVersionPart(VersionPart.Minor, Version);
+
+		/// <summary>
+		/// Gets the name of Operating System.
+		/// </summary>
+		public string Name { get; private set; }
+
+		/// <summary>
+		/// Gets the version of Operating System.
+		/// </summary>
+		public string Version { get; private set; }
+		#endregion
+
 		#region Private methods
 		private void LoadOSInfo()
 		{
 			if (_regex.IsMatch(_userAgent))
 			{
 				var match = _regex.Match(_userAgent);
-				var osInfo = RegexHelper.GetOSInfo(_osName, match);
+				var osInfo = OSHelper.GetOSInfo(_osName, match);
 				Name = osInfo.Name;
 				Version = osInfo.Version;
 			}

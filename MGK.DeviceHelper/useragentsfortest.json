@@ -1,0 +1,31 @@
+{
+	"UserAgents": [
+		{
+			{"Origin": "1","Name": "AppEngine-Google","Value": "AppEngine-Google; (+http://code.google.com/appengine; appid: webetrex)","BrowserName": "49","BrowserVersion": "","OSName": "0","OSVersion": "","Platform": "0"},
+			{"Origin": "1","Name": "AppEngine-Google","Value": "AppEngine-Google; (+http://code.google.com/appengine; appid: unblock4myspace)","BrowserName": "49","BrowserVersion": "","OSName": "0","OSVersion": "","Platform": "0"},
+			{"Origin": "1","Name": "AppEngine-Google","Value": "AppEngine-Google; (+http://code.google.com/appengine; appid: tunisproxy)","BrowserName": "49","BrowserVersion": "","OSName": "0","OSVersion": "","Platform": "0"},
+			{"Origin": "1","Name": "AppEngine-Google","Value": "AppEngine-Google; (+http://code.google.com/appengine; appid: proxy-in-rs)","BrowserName": "49","BrowserVersion": "","OSName": "0","OSVersion": "","Platform": "0"},
+			{"Origin": "1","Name": "AppEngine-Google","Value": "AppEngine-Google; (+http://code.google.com/appengine; appid: proxy-ba-k)","BrowserName": "49","BrowserVersion": "","OSName": "0","OSVersion": "","Platform": "0"},
+			{"Origin": "1","Name": "AppEngine-Google","Value": "AppEngine-Google; (+http://code.google.com/appengine; appid: moelonepyaeshan)","BrowserName": "49","BrowserVersion": "","OSName": "0","OSVersion": "","Platform": "0"},
+			{"Origin": "1","Name": "AppEngine-Google","Value": "AppEngine-Google; (+http://code.google.com/appengine; appid: mirrorrr)","BrowserName": "49","BrowserVersion": "","OSName": "0","OSVersion": "","Platform": "0"},
+			{"Origin": "1","Name": "AppEngine-Google","Value": "AppEngine-Google; (+http://code.google.com/appengine; appid: mapremiereapplication)","BrowserName": "49","BrowserVersion": "","OSName": "0","OSVersion": "","Platform": "0"},
+			{"Origin": "1","Name": "AppEngine-Google","Value": "AppEngine-Google; (+http://code.google.com/appengine; appid: longbows-hideout)","BrowserName": "49","BrowserVersion": "","OSName": "0","OSVersion": "","Platform": "0"},
+			{"Origin": "1","Name": "AppEngine-Google","Value": "AppEngine-Google; (+http://code.google.com/appengine; appid: eduas23)","BrowserName": "49","BrowserVersion": "","OSName": "0","OSVersion": "","Platform": "0"},
+			{"Origin": "1","Name": "AppEngine-Google","Value": "AppEngine-Google; (+http://code.google.com/appengine; appid: craigserver)","BrowserName": "49","BrowserVersion": "","OSName": "0","OSVersion": "","Platform": "0"},
+			{"Origin": "1","Name": "AppEngine-Google","Value": "AppEngine-Google; ( http://code.google.com/appengine; appid: proxy-ba-k)","BrowserName": "49","BrowserVersion": "","OSName": "0","OSVersion": "","Platform": "0"},
+			{"Origin": "2","Name": "Bunjalloo","Value": "Bunjalloo/0.7.6(Nintendo DS;U;en)","BrowserName": "48","BrowserVersion": "0.7.6","OSName": "0","OSVersion": "","Platform": "0"},
+			{"Origin": "2","Name": "Playstation 3","Value": "Mozilla/5.0 (PLAYSTATION 3; 3.55)","BrowserName": "50","BrowserVersion": "3.55","OSName": "30","OSVersion": "","Platform": "2"},
+			{"Origin": "2","Name": "Playstation 3","Value": "Mozilla/5.0 (PLAYSTATION 3; 2.00)","BrowserName": "50","BrowserVersion": "2.00","OSName": "30","OSVersion": "","Platform": "2"},
+			{"Origin": "2","Name": "Playstation 3","Value": "Mozilla/5.0 (PLAYSTATION 3; 1.90)","BrowserName": "50","BrowserVersion": "1.90","OSName": "30","OSVersion": "","Platform": "2"},
+			{"Origin": "2","Name": "Playstation 3","Value": "Mozilla/5.0 (PLAYSTATION 3; 1.70)","BrowserName": "50","BrowserVersion": ".170","OSName": "30","OSVersion": "","Platform": "2"},
+			{"Origin": "2","Name": "Playstation 3","Value": "Mozilla/5.0 (PLAYSTATION 3; 1.5)","BrowserName": "50","BrowserVersion": "1.5","OSName": "30","OSVersion": "","Platform": "2"},
+			{"Origin": "2","Name": "Playstation 3","Value": "Mozilla/5.0 (PLAYSTATION 3; 1.10)","BrowserName": "50","BrowserVersion": "1.10","OSName": "30","OSVersion": "","Platform": "2"},
+			{"Origin": "2","Name": "Playstation 3","Value": "Mozilla/5.0 (PLAYSTATION 3; 1.00)","BrowserName": "50","BrowserVersion": "1.00","OSName": "30","OSVersion": "","Platform": "2"},
+			{"Origin": "2","Name": "Playstation 3","Value": "Mozilla/4.0 (PS3 (PlayStation 3); 1.00)","BrowserName": "50","BrowserVersion": "1.00","OSName": "30","OSVersion": "","Platform": "2"},
+			{"Origin": "2","Name": "Playstation 3","Value": "Mozilla/5.0 (PLAYSTATION 3; 1.0)","BrowserName": "50","BrowserVersion": "1.0","OSName": "30","OSVersion": "","Platform": "2"},
+			{"Origin": "2","Name": "Playstation Portable","Value": "PSP (PlayStation Portable); 2.00","BrowserName": "51","BrowserVersion": "2.00","OSName": "0","OSVersion": "","Platform": "1"},
+			{"Origin": "2","Name": "Playstation Portable","Value": "Mozilla/4.0 (PSP (PlayStation Portable); 2.00)","BrowserName": "51","BrowserVersion": "2.00","OSName": "0","OSVersion": "","Platform": "1"},
+			{"Origin": "2","Name": "Wii","Value": "wii libnup/1.0","BrowserName": "52","BrowserVersion": "1.0","OSName": "0","OSVersion": "","Platform": "2"},
+		},
+	]
+}

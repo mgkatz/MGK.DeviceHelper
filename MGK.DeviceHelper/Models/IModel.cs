@@ -1,12 +1,10 @@
-﻿using System.Text.RegularExpressions;
-
-namespace MGK.DeviceHelper.Models
+﻿namespace MGK.DeviceHelper.Models
 {
 	/// <summary>
 	/// An interface that represents the model with the records.
 	/// </summary>
 	/// <typeparam name="T">A class that represents a RegexOSRecordModel or a RegexBrowserRecordModel.</typeparam>
-	public interface IRegexModel<T> where T : class
+	public interface IModel<T> where T : class
     {
 		#region Properties
 		/// <summary>

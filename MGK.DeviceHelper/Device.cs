@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 using MGK.DeviceHelper.Enums;
 using MGK.DeviceHelper.Helpers;
+using MGK.DeviceHelper.Models;
 
 namespace MGK.DeviceHelper
 {
@@ -13,28 +15,11 @@ namespace MGK.DeviceHelper
         #region Private variables and objects
         private readonly string _userAgent;
 
-        private readonly IEnumerable<(BrowserName Name, Regex Expression)> _browserModel =
-            RegexHelper.GetRegexBrowserModel();
+        private readonly IEnumerable<BrowserSimpleRecord> _browserModel =
+            BrowserHelper.GetBrowserModel();
 
-        private readonly IEnumerable<(OSName Name, Regex Expression)> _osModel =
-            RegexHelper.GetRegexOSModel();
-        #endregion
-
-        #region Properties
-		/// <summary>
-		/// Gets the Browser information.
-		/// </summary>
-        public Browser Browser { get; private set; }
-
-		/// <summary>
-		/// Gets the type of the Device. For a list of devices type <see cref="Enums.DeviceType"/>.
-		/// </summary>
-		public DeviceType DeviceType { get; private set; }
-
-		/// <summary>
-		/// Gets the Operating System information.
-		/// </summary>
-		public OS OS { get; private set; }
+        private readonly IEnumerable<OSSimpleRecord> _osModel =
+            OSHelper.GetOSModel();
 		#endregion
 
 		#region Constructors
@@ -48,10 +33,29 @@ namespace MGK.DeviceHelper
 			DeviceType = GetDeviceType();
             Browser = GetBrowser();
             OS = GetOS();
+			Origin = GetOrigin();
         }
 		#endregion
 
+		#region Properties
+		public Browser Browser { get; }
+
+		public DeviceType DeviceType { get; }
+
+		public UserAgentOrigin Origin { get; }
+
+		public OS OS { get; }
+		#endregion
+
 		#region Private methods
+		private Browser GetBrowser()
+		{
+			var browserRecord = _browserModel.FirstOrDefault(b => b.Regex.IsMatch(_userAgent));
+			return browserRecord == null
+				? new Browser()
+				: new Browser(_userAgent, browserRecord.Regex, browserRecord.Name);
+		}
+
 		private DeviceType GetDeviceType()
 		{
 			// Check if user agent is a smart TV - http://goo.gl/FocDk
@@ -85,28 +89,22 @@ namespace MGK.DeviceHelper
 			return DeviceType.Unknown;
 		}
 
-		private Browser GetBrowser()
-        {
-            foreach (var browserRecord in _browserModel)
-            {
-                if (browserRecord.Expression.IsMatch(_userAgent))
-                {
-                    var browser = new Browser(_userAgent, browserRecord.Expression, browserRecord.Name);
-					return browser;
-                }
-            }
+		private UserAgentOrigin GetOrigin()
+		{
+			var browserRecord = _browserModel.FirstOrDefault(b => b.Regex.IsMatch(_userAgent));
+			var deviceType = GetDeviceType();
+			var origin = UserAgentHelper.GetOrigin(deviceType, browserRecord.Name);
 
-			return new Browser();
-        }
+			return origin;
+		}
 
-        private OS GetOS()
+		private OS GetOS()
         {
 			foreach (var osRecord in _osModel)
 			{
-				if (osRecord.Expression.IsMatch(_userAgent))
+				if (osRecord.Regex.IsMatch(_userAgent))
 				{
-					var os = new OS(_userAgent, osRecord.Expression, osRecord.Name);
-					return os;
+					return new OS(_userAgent, osRecord.Regex, osRecord.Name);
 				}
 			}
 
@@ -125,9 +123,10 @@ namespace MGK.DeviceHelper
 			if (other == null)
 				return false;
 
-			return Browser == other.Browser &&
+			return Browser.Equals(other.Browser) &&
 				DeviceType == other.DeviceType &&
-				OS == other.OS;
+				OS.Equals(other.OS) &&
+				Origin == other.Origin;
 		}
 
 		/// <summary>
@@ -151,10 +150,10 @@ namespace MGK.DeviceHelper
 				var hashCode = (Browser != null ? Browser.GetHashCode() : 0);
 				hashCode = (hashCode * 397) ^ DeviceType.GetHashCode();
 				hashCode = (hashCode * 397) ^ (OS != null ? OS.GetHashCode() : 0);
+				hashCode = (hashCode * 397) ^ Origin.GetHashCode();
 				return hashCode;
 			}
 		}
 		#endregion
-
 	}
 }

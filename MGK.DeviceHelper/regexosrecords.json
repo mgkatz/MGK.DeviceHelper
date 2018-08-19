@@ -1,154 +1,154 @@
 ﻿{
 	"Records": [
 		{
-			"RegexName": "25",
-			"RegexExpression": "microsoft\\s(windows)\\s(vista|xp)",
-			"RegexOptions": "1"
+			"Name": "25",
+			"Expression": "microsoft\\s(windows)\\s(vista|xp)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "28",
-			"RegexExpression": "(windows)\\snt\\s6\\.2;\\s(arm)",
-			"RegexOptions": "1"
+			"Name": "28",
+			"Expression": "(windows)\\snt\\s6\\.2;\\s(arm)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "27",
-			"RegexExpression": "(windows\\sphone(?:\\sos)*)[\\s\\/]?([\\d\\.\\s]+\\w)*",
-			"RegexOptions": "1"
+			"Name": "27",
+			"Expression": "(windows\\sphone(?:\\sos)*)[\\s\\/]?([\\d\\.\\s]+\\w)*",
+			"Options": "1"
 		},
 		{
-			"RegexName": "26",
-			"RegexExpression": "(windows\\smobile|windows)[\\s\\/]?([ntce\\d\\.\\s]+\\w)",
-			"RegexOptions": "1"
+			"Name": "26",
+			"Expression": "(windows\\smobile|windows)[\\s\\/]?([ntce\\d\\.\\s]+\\w)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "24",
-			"RegexExpression": "(win(?=3|9|n)|win\\s9x\\s)([nt\\d\\.]+)",
-			"RegexOptions": "1"
+			"Name": "24",
+			"Expression": "(win(?=3|9|n)|win\\s9x\\s)([nt\\d\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "4",
-			"RegexExpression": "\\((bb)(10);",
-			"RegexOptions": "1"
+			"Name": "4",
+			"Expression": "\\((bb)(10);",
+			"Options": "1"
 		},
 		{
-			"RegexName": "3",
-			"RegexExpression": "(blackberry)\\w*\\/?([\\w\\.]+)*",
-			"RegexOptions": "1"
+			"Name": "3",
+			"Expression": "(blackberry)\\w*\\/?([\\w\\.]+)*",
+			"Options": "1"
 		},
 		{
-			"RegexName": "22",
-			"RegexExpression": "(tizen)[\\/\\s]([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "22",
+			"Expression": "(tizen)[\\/\\s]([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "2",
-			"RegexExpression": "(android|webos|palm\\sos|qnx|bada|rim\\stablet\\sos|meego|contiki)[\\/\\s-]?([\\w\\.]+)*",
-			"RegexOptions": "1"
+			"Name": "2",
+			"Expression": "(android|webos|palm\\sos|qnx|bada|rim\\stablet\\sos|meego|contiki)[\\/\\s-]?([\\w\\.]+)*",
+			"Options": "1"
 		},
 		{
-			"RegexName": "17",
-			"RegexExpression": "linux;.+(sailfish);",
-			"RegexOptions": "1"
+			"Name": "17",
+			"Expression": "linux;.+(sailfish);",
+			"Options": "1"
 		},
 		{
-			"RegexName": "21",
-			"RegexExpression": "(symbian\\s?os|symbos|s60(?=;))[\\/\\s-]?([\\w\\.]+)*",
-			"RegexOptions": "1"
+			"Name": "21",
+			"Expression": "(symbian\\s?os|symbos|s60(?=;))[\\/\\s-]?([\\w\\.]+)*",
+			"Options": "1"
 		},
 		{
-			"RegexName": "18",
-			"RegexExpression": "\\((series40);",
-			"RegexOptions": "1"
+			"Name": "18",
+			"Expression": "\\((series40);",
+			"Options": "1"
 		},
 		{
-			"RegexName": "6",
-			"RegexExpression": "mozilla.+\\(mobile;.+gecko.+firefox",
-			"RegexOptions": "1"
+			"Name": "6",
+			"Expression": "mozilla.+\\(mobile;.+gecko.+firefox",
+			"Options": "1"
 		},
 		{
-			"RegexName": "15",
-			"RegexExpression": "(nintendo|playstation)\\s([wids34portablevu]+)",
-			"RegexOptions": "1"
+			"Name": "15",
+			"Expression": "(nintendo|playstation)\\s([wids34portablevu]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "14",
-			"RegexExpression": "(mint)[\\/\\s\\(]?(\\w+)*",
-			"RegexOptions": "1"
+			"Name": "14",
+			"Expression": "(mint)[\\/\\s\\(]?(\\w+)*",
+			"Options": "1"
 		},
 		{
-			"RegexName": "13",
-			"RegexExpression": "(mageia|vectorlinux)[;\\s]",
-			"RegexOptions": "1"
+			"Name": "13",
+			"Expression": "(mageia|vectorlinux)[;\\s]",
+			"Options": "1"
 		},
 		{
-			"RegexName": "11",
-			"RegexExpression": "(joli|[kxln]?ubuntu|debian|[open]*suse|gentoo|(?=\\s)arch|slackware|fedora|mandriva|centos|pclinuxos|redhat|zenwalk|linpus)[\\/\\s-]?(?!chrom)([\\w\\.-]+)*",
-			"RegexOptions": "1"
+			"Name": "11",
+			"Expression": "(joli|[kxln]?ubuntu|debian|[open]*suse|gentoo|(?=\\s)arch|slackware|fedora|mandriva|centos|pclinuxos|redhat|zenwalk|linpus)[\\/\\s-]?(?!chrom)([\\w\\.-]+)*",
+			"Options": "1"
 		},
 		{
-			"RegexName": "9",
-			"RegexExpression": "(hurd|linux)\\s?([\\w\\.]+)*",
-			"RegexOptions": "1"
+			"Name": "9",
+			"Expression": "(hurd|linux)\\s?([\\w\\.]+)*",
+			"Options": "1"
 		},
 		{
-			"RegexName": "8",
-			"RegexExpression": "(gnu)\\s?([\\w\\.]+)*",
-			"RegexOptions": "1"
+			"Name": "8",
+			"Expression": "(gnu)\\s?([\\w\\.]+)*",
+			"Options": "1"
 		},
 		{
-			"RegexName": "5",
-			"RegexExpression": "(cros)\\s[\\w]+\\s([\\w\\.]+\\w)",
-			"RegexOptions": "1"
+			"Name": "5",
+			"Expression": "(cros)\\s[\\w]+\\s([\\w\\.]+\\w)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "19",
-			"RegexExpression": "(sunos)\\s?([\\w\\.]+\\d)*",
-			"RegexOptions": "1"
+			"Name": "19",
+			"Expression": "(sunos)\\s?([\\w\\.]+\\d)*",
+			"Options": "1"
 		},
 		{
-			"RegexName": "7",
-			"RegexExpression": "\\s([frentopc-]{0,4}bsd|dragonfly)\\s?([\\w\\.]+)*",
-			"RegexOptions": "1"
+			"Name": "7",
+			"Expression": "\\s([frentopc-]{0,4}bsd|dragonfly)\\s?([\\w\\.]+)*",
+			"Options": "1"
 		},
 		{
-			"RegexName": "7",
-			"RegexExpression": "(haiku)\\s(\\w+)",
-			"RegexOptions": "1"
+			"Name": "7",
+			"Expression": "(haiku)\\s(\\w+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "10",
-			"RegexExpression": "(ip[honead]+)(?:.*os\\s([\\w]+)*\\slike\\smac|;\\sopera)",
-			"RegexOptions": "1"
+			"Name": "10",
+			"Expression": "(ip[honead]+)(?:.*os\\s([\\w]+)*\\slike\\smac|;\\sopera)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "12",
-			"RegexExpression": "(mac\\sos\\sx)\\s?([\\w\\s\\.]+\\w)*",
-			"RegexOptions": "1"
+			"Name": "12",
+			"Expression": "(mac\\sos\\sx)\\s?([\\w\\s\\.]+\\w)*",
+			"Options": "1"
 		},
 		{
-			"RegexName": "12",
-			"RegexExpression": "(macintosh|mac(?=_powerpc)\\s)",
-			"RegexOptions": "1"
+			"Name": "12",
+			"Expression": "(macintosh|mac(?=_powerpc)\\s)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "20",
-			"RegexExpression": "((?:open)?solaris)[\\/\\s-]?([\\w\\.]+)*",
-			"RegexOptions": "1"
+			"Name": "20",
+			"Expression": "((?:open)?solaris)[\\/\\s-]?([\\w\\.]+)*",
+			"Options": "1"
 		},
 		{
-			"RegexName": "1",
-			"RegexExpression": "(aix)\\s((\\d)(?=\\.|\\)|\\s)[\\w\\.]*)*",
-			"RegexOptions": "1"
+			"Name": "1",
+			"Expression": "(aix)\\s((\\d)(?=\\.|\\)|\\s)[\\w\\.]*)*",
+			"Options": "1"
 		},
 		{
-			"RegexName": "16",
-			"RegexExpression": "(plan\\s9|minix|beos|os\\/2|amigaos|morphos|risc\\sos|openvms)",
-			"RegexOptions": "1"
+			"Name": "16",
+			"Expression": "(plan\\s9|minix|beos|os\\/2|amigaos|morphos|risc\\sos|openvms)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "23",
-			"RegexExpression": "(unix)\\s?([\\w\\.]+)*",
-			"RegexOptions": "1"
+			"Name": "23",
+			"Expression": "(unix)\\s?([\\w\\.]+)*",
+			"Options": "1"
 		}
 	]
 }

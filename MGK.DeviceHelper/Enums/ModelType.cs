@@ -21,10 +21,10 @@
 			switch (source)
 			{
 				case ModelType.Browser:
-					return "regexbrowserrecords.json";
+					return Resources.DefaultResources.BrowserJsonFile;
 
 				default:
-					return "regexosrecords.json";
+					return Resources.DefaultResources.OSJsonFile;
 			}
 		}
 	}

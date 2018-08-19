@@ -1,229 +1,239 @@
 ﻿{
 	"Records": [
 		{
-			"RegexName": "1",
-			"RegexExpression": "android.+version\\/([\\w\\.]+)\\s+(?:mobile\\s?safari|safari)*",
-			"RegexOptions": "1"
+			"Name": "1",
+			"Expression": "android.+version\\/([\\w\\.]+)\\s+(?:mobile\\s?safari|safari)*",
+			"Options": "1"
 		},
 		{
-			"RegexName": "2",
-			"RegexExpression": "(avant\\s|iemobile|slim|baidu)(?:browser)?[\\/\\s]?([\\w\\.]*)",
-			"RegexOptions": "1"
+			"Name": "2",
+			"Expression": "(avant\\s|iemobile|slim|baidu)(?:browser)?[\\/\\s]?([\\w\\.]*)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "3",
-			"RegexExpression": "((?:android.+)crmo|crios)\\/([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "3",
+			"Expression": "((?:android.+)crmo|crios)\\/([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "4",
-			"RegexExpression": "(chrome(?!.*Edge)|omniweb|arora|[tizenoka]{5}\\s?browser)\\/v?([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "4",
+			"Expression": "(chrome(?!.*Edge)|omniweb|arora|[tizenoka]{5}\\s?browser)\\/v?([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "5",
-			"RegexExpression": "\\swv\\).+(chrome(?!.*Edge))\\/([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "5",
+			"Expression": "\\swv\\).+(chrome(?!.*Edge))\\/([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "6",
-			"RegexExpression": "(chromium|flock|rockmelt|midori|epiphany|silk|skyfire|ovibrowser|bolt|iron|vivaldi|iridium|phantomjs)\\/([\\w\\.-]+)",
-			"RegexOptions": "1"
+			"Name": "6",
+			"Expression": "(chromium|flock|rockmelt|midori|epiphany|silk|skyfire|ovibrowser|bolt|iron|vivaldi|iridium|phantomjs)\\/([\\w\\.-]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "7",
-			"RegexExpression": "(comodo_dragon)\\/([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "7",
+			"Expression": "(comodo_dragon)\\/([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "8",
-			"RegexExpression": "(dolfin)\\/([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "8",
+			"Expression": "(dolfin)\\/([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "9",
-			"RegexExpression": ";fbav\\/([\\w\\.]+);",
-			"RegexOptions": "1"
+			"Name": "9",
+			"Expression": ";fbav\\/([\\w\\.]+);",
+			"Options": "1"
 		},
 		{
-			"RegexName": "10",
-			"RegexExpression": "fxios\\/([\\w\\.-]+)",
-			"RegexOptions": "1"
+			"Name": "10",
+			"Expression": "fxios\\/([\\w\\.-]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "11",
-			"RegexExpression": "(firefox|seamonkey|k-meleon|icecat|iceape|firebird|phoenix)\\/([\\w\\.-]+)",
-			"RegexOptions": "1"
+			"Name": "11",
+			"Expression": "(firefox|seamonkey|k-meleon|icecat|iceape|firebird|phoenix)\\/([\\w\\.-]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "12",
-			"RegexExpression": "(gobrowser)\\/?([\\w\\.]+)*",
-			"RegexOptions": "1"
+			"Name": "12",
+			"Expression": "(gobrowser)\\/?([\\w\\.]+)*",
+			"Options": "1"
 		},
 		{
-			"RegexName": "13",
-			"RegexExpression": "(ice\\s?browser)\\/v?([\\w\\._]+)",
-			"RegexOptions": "1"
+			"Name": "13",
+			"Expression": "(ice\\s?browser)\\/v?([\\w\\._]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "14",
-			"RegexExpression": "(icedragon|iceweasel|camino|chimera|fennec|maemo\\sbrowser|minimo|conkeror)[\\/\\s]?([\\w\\.\\+]+)",
-			"RegexOptions": "1"
+			"Name": "14",
+			"Expression": "(icedragon|iceweasel|camino|chimera|fennec|maemo\\sbrowser|minimo|conkeror)[\\/\\s]?([\\w\\.\\+]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "15",
-			"RegexExpression": "(trident).+rv[:\\s]([\\w\\.]+).+like\\sgecko",
-			"RegexOptions": "1"
+			"Name": "15",
+			"Expression": "(trident).+rv[:\\s]([\\w\\.]+).+like\\sgecko",
+			"Options": "1"
 		},
 		{
-			"RegexName": "16",
-			"RegexExpression": "(?:ms|\\()(ie)\\s([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "16",
+			"Expression": "(?:ms|\\()(ie)\\s([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "17",
-			"RegexExpression": "(kindle)\\/([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "17",
+			"Expression": "(kindle)\\/([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "18",
-			"RegexExpression": "(konqueror)\\/([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "18",
+			"Expression": "(konqueror)\\/([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "19",
-			"RegexExpression": "(links)\\s\\(([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "19",
+			"Expression": "(links)\\s\\(([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "20",
-			"RegexExpression": "(lunascape|maxthon|netfront|jasmine|blazer)[\\/\\s]?([\\w\\.]+)*",
-			"RegexOptions": "1"
+			"Name": "20",
+			"Expression": "(lunascape|maxthon|netfront|jasmine|blazer)[\\/\\s]?([\\w\\.]+)*",
+			"Options": "1"
 		},
 		{
-			"RegexName": "21",
-			"RegexExpression": "(edge)\\/((\\d+)?[\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "21",
+			"Expression": "(edge)\\/((\\d+)?[\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "22",
-			"RegexExpression": "xiaomi\\/miuibrowser\\/([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "22",
+			"Expression": "xiaomi\\/miuibrowser\\/([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "23",
-			"RegexExpression": "version\\/([\\w\\.]+).+?mobile\\/\\w+\\s(safari)",
-			"RegexOptions": "1"
+			"Name": "23",
+			"Expression": "version\\/([\\w\\.]+).+?mobile\\/\\w+\\s(safari)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "24",
-			"RegexExpression": "(mosaic)[\\/\\s]([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "24",
+			"Expression": "(mosaic)[\\/\\s]([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "25",
-			"RegexExpression": "(mozilla)\\/([\\w\\.]+).+rv\\:.+gecko\\/\\d+",
-			"RegexOptions": "1"
+			"Name": "25",
+			"Expression": "(mozilla)\\/([\\w\\.]+).+rv\\:.+gecko\\/\\d+",
+			"Options": "1"
 		},
 		{
-			"RegexName": "26",
-			"RegexExpression": "(navigator|netscape)\\/([\\w\\.-]+)",
-			"RegexOptions": "1"
+			"Name": "26",
+			"Expression": "(navigator|netscape)\\/([\\w\\.-]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "27",
-			"RegexExpression": "(opera).+version\\/([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "27",
+			"Expression": "(opera).+version\\/([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "28",
-			"RegexExpression": "(opera)[\\/\\s]+([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "28",
+			"Expression": "(opera)[\\/\\s]+([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "29",
-			"RegexExpression": "(opera\\smini)\\/([\\w\\.-]+)",
-			"RegexOptions": "1"
+			"Name": "29",
+			"Expression": "(opera\\smini)\\/([\\w\\.-]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "30",
-			"RegexExpression": "(opios)[\\/\\s]+([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "30",
+			"Expression": "(opios)[\\/\\s]+([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "31",
-			"RegexExpression": "(opera\\s[mobiletab]+).+version\\/([\\w\\.-]+)",
-			"RegexOptions": "1"
+			"Name": "31",
+			"Expression": "(opera\\s[mobiletab]+).+version\\/([\\w\\.-]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "32",
-			"RegexExpression": "\\s(opr)\\/([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "32",
+			"Expression": "\\s(opr)\\/([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "33",
-			"RegexExpression": "(polaris|lynx|dillo|icab|doris|amaya|w3m|netsurf|sleipnir)[\\/\\s]?([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "33",
+			"Expression": "(polaris|lynx|dillo|icab|doris|w3m|netsurf|sleipnir)[\\/\\s]?([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "34",
-			"RegexExpression": "(qqbrowser)[\\/\\s]?([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "34",
+			"Expression": "(qqbrowser)[\\/\\s]?([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "35",
-			"RegexExpression": "(rekonq)\\/([\\w\\.]+)*",
-			"RegexOptions": "1"
+			"Name": "35",
+			"Expression": "(rekonq)\\/([\\w\\.]+)*",
+			"Options": "1"
 		},
 		{
-			"RegexName": "36",
-			"RegexExpression": "version\\/([\\w\\.]+).+?(mobile\\s?safari|safari)",
-			"RegexOptions": "1"
+			"Name": "36",
+			"Expression": "version\\/([\\w\\.]+).+?(mobile\\s?safari|safari)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "37",
-			"RegexExpression": "webkit.+?(mobile\\s?safari|safari)(\\/[\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "37",
+			"Expression": "webkit.+?(mobile\\s?safari|safari)(\\/[\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "38",
-			"RegexExpression": "android.+samsungbrowser\\/([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "38",
+			"Expression": "android.+samsungbrowser\\/([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "39",
-			"RegexExpression": "(swiftfox)",
-			"RegexOptions": "1"
+			"Name": "39",
+			"Expression": "(swiftfox)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "40",
-			"RegexExpression": "(uc\\s?browser)[\\/\\s]?([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "40",
+			"Expression": "(uc\\s?browser)[\\/\\s]?([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "40",
-			"RegexExpression": "ucweb.+(ucbrowser)[\\/\\s]?([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "40",
+			"Expression": "ucweb.+(ucbrowser)[\\/\\s]?([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "40",
-			"RegexExpression": "juc.+(ucweb)[\\/\\s]?([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "40",
+			"Expression": "juc.+(ucweb)[\\/\\s]?([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "41",
-			"RegexExpression": "(webkit|khtml)\\/([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "41",
+			"Expression": "(webkit|khtml)\\/([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "42",
-			"RegexExpression": "(micromessenger)\\/([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "42",
+			"Expression": "(micromessenger)\\/([\\w\\.]+)",
+			"Options": "1"
 		},
 		{
-			"RegexName": "43",
-			"RegexExpression": "(yabrowser)\\/([\\w\\.]+)",
-			"RegexOptions": "1"
+			"Name": "43",
+			"Expression": "(yabrowser)\\/([\\w\\.]+)",
+			"Options": "1"
+		},
+		{
+			"Name": "48",
+			"Expression": "(bunjalloo)\\/([\\w\\.]+)",
+			"Options": "1"
+		},
+		{
+			"Name": "49",
+			"Expression": "(appengine-google)",
+			"Options": "1"
 		}
 	]
 }

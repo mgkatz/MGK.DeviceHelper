@@ -18,6 +18,11 @@ namespace MGK.DeviceHelper
 		DeviceType DeviceType { get; }
 
 		/// <summary>
+		/// Gets the origin of the device. For a list of devices type <see cref="Enums.UserAgentOrigin"/>.
+		/// </summary>
+		UserAgentOrigin Origin { get; }
+
+		/// <summary>
 		/// Gets the Operating System information.
 		/// </summary>
 		OS OS { get; }
