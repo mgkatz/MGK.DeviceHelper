@@ -1,0 +1,55 @@
+Links
+*****
+http://www.useragentstring.com/
+http://www.useragentstring.com/pages/api.php
+https://msdn.microsoft.com/en-us/library/ms524602%28v=vs.90%29.aspx?f=255&MSPPError=-2147217396
+https://docs.microsoft.com/en-us/iis/web-dev-reference/server-variables
+https://www.google.com.ar/search?source=hp&ei=SHKiWoS1D4KewATd7broCg&q=asp.net+get+device+resolution&oq=asp.net+get+device+reso&gs_l=psy-ab.3.0.0i22i30k1.18729.42617.0.44137.46.37.4.0.0.0.1326.6446.0j3j1j1j2j2j0j3.12.0....0...1c.1.64.psy-ab..32.14.4595...0j0i131k1j0i19k1j0i30i19k1j0i13k1j0i22i30i19k1.0.UDkWG_Yb1wU
+https://forums.asp.net/t/1862396.aspx?How+can+i+get+the+current+Screen+resolution+in+asp+net+c+not+in+javascript
+https://www.google.com.ar/search?q=c%23+compile+multiple+projects+into+one+assembly&rlz=1C1SQJL_esAR786AR786&oq=c%23+compile+projects+a&aqs=chrome.2.69i57j69i58j0.14845j0j4&sourceid=chrome&ie=UTF-8
+https://www.codeproject.com/Articles/9364/Merging-NET-assemblies-using-ILMerge
+https://stackoverflow.com/questions/8077570/how-to-merge-multiple-assemblies-into-one
+https://blogs.msdn.microsoft.com/vinsibal/2008/09/19/wpf-datagrid-clipboard-paste-sample/
+https://blogs.msdn.microsoft.com/vinsibal/2008/09/25/pasting-content-to-new-rows-on-the-wpf-datagrid/
+
+DeviceHelper
+************
+	- Add support to try to get the platform of the Browser/OS (x86 or x64 or whatever).
+	- Add support to try to get the IP and its general localization using IIS Server Variables as base.
+	- Add support to know the resolution of the device and the available resolution in the browser.
+
+IIS ServerVariables
+*******************
+	https://msdn.microsoft.com/en-us/library/ms524602(v=vs.90).aspx
+	https://docs.microsoft.com/en-us/iis/web-dev-reference/server-variables
+
+	var serverVariables = new Dictionary<string, string>();
+
+	foreach (var serverVariableKey in Request.ServerVariables.AllKeys)
+	{
+		serverVariables.Add(serverVariableKey, Request.ServerVariables[serverVariableKey]);
+	}
+
+Part to identify x64 architecture in a UserAgent string
+*******************************************************
+x86_64
+x86-64
+Win64
+x64; (Mind the semicolon! Without it you will have false-positives.)
+amd64
+AMD64
+WOW64
+x64_64
+ia64
+sparc64
+ppc64
+IRIX64
+
+Miscellaneous
+*************
+Origin
+Device
+OS
+OS Version
+Browser
+Browser Version
